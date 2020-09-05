@@ -41,7 +41,7 @@
 - **find** . -name "file name" : Return all the routes where the file mentioned appears.
 - **find / -name filename** : The bar means that finds in the source folder.
 - **find . -atime +100** : Files that are in a folder, that where open 100 days ago.
-- **find / -name *.txt -fprint new_file_to_print.txt** : Print all the .txt files in a specified new file.
+- find / -name *.txt -fprint new_file_to_print.txt : Print all the .txt files in a specified new file.
 - **stat** file_name : Show the statistics of a file, size, block, access (permissions), modifications, changes.
 - **chmod +x file_name** : Give execution permissions to the user, group, global.
 - **chmod 0### file_name** : Change the permissions for a specific file.
