@@ -6,7 +6,7 @@
 - **nano** name.extension: Creates a file with a specified direction. To create a hidden file the name has to start with '.'
 - **cat** file : Shows on screen the content of a file
 - **cp** file1 file2 : Copy the first file to another file
-- **cp -i *.txt** : Copy in the previous directory all the txt files 
+- cp -i *.txt : Copy in the previous directory all the txt files 
 - **cp -R dir1 dir2** : Copy the directory 1 to the directory 2. It is important to use -R wich means Recursive. 
 - **cp -R** /direction/ destination: Copy the absolute direction where we are.
 - **cp -R** -/direction/ ./destination: Copy the current folder
