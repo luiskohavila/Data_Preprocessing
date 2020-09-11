@@ -149,10 +149,38 @@
 - **cut -d"delimitation" -f#** file : Cut the defined element in the assigned delimitation (character) from a file. Example: cut -d"," -f3 my_file.csv
 - **cut -d"delimitation" -f# #** : Cut the defined element in the range for the assigned delimitation (character) from a file. Example: cut -d"," -f1 5 my_file.csv
 
+#### unic
+- **unic -c** file : Counts how many times all the words appear in a specified file.
+
 #### echo
 - **echo "word" > new_file** : Creates a line with the word in the file. If you do it again, it replaces the last line.
 
-#### Variables
+## File Download & Processes
+
+#### wget
+- **wget** url : Download information from different protocols on internet. It supports HTTP, HTTPS, FTP.
+- **wget -i** file : Dowload the information from a file with the link inside of it.
+- **wget -O name.extension** url : Saving the information from the link in creating a specified file.
+- **wget url &** : While the download is running we can use different commands.
+- **wget -i file(with link) 2> /dev/null** : Avoids to show on screen the download processes, it only shows if its an error.
+- **wget -i -limit-rate=#kb url** : Avoids to use all the bandwidth in a download, and you can specify how much you want. Example: wget -i -limit-rate=#5kb url
+
+#### curl
+- **curl** url : Read the file and show it on screen.
+- **curl -o** file url : Download and save the information of the document from the url in the specified file.
+- **curl --limit-rate #kb url** : Avoids to use all the bandwidth in a download, and you can specify how much you want.
+
+#### gedit
+- **gedit** file : Open the file in another window for editing, but we can not execute commands in the terminal while using.
+- **gedit** file **&** : Open the file in another window for editing at the background. We can run commands in the terminal while using it.
+
+#### bg
+- **bg** : Reactivates the last process at the background.
+
+#### top
+- **top** : Show the processes that are executing.
+
+### Variables
 - **variable="Text in a variable"** : Creates a variable
 - **echo ${variable} >>** file : Adds the variable to the file
 
